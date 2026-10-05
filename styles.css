@@ -146,6 +146,28 @@ h1 em { color: #e2b5a0; font-weight: 500; }
 .footer-brand { color: var(--red); font-weight: 800; }
 .footer-brand span { color: var(--ink); font-family: var(--serif); font-weight: 500; }
 
+.page-main { min-height: 55vh; }
+.page-intro { padding: 4.5rem max(1.5rem, calc((100% - 900px) / 2)) 3.5rem; background: var(--paper-deep); }
+.page-intro h1 { max-width: 760px; margin-bottom: .8rem; color: var(--red); font-size: clamp(2.4rem, 5vw, 3.8rem); }
+.page-intro p:last-child { max-width: 680px; margin-bottom: 0; color: #5f5749; }
+.page-content { max-width: 900px; margin: 0 auto; padding: 3.5rem 1.5rem 5rem; }
+.page-content h2 { margin: 2.5rem 0 .8rem; font-size: clamp(1.55rem, 3vw, 2rem); }
+.page-content h2:first-child { margin-top: 0; }
+.page-content p, .page-content li { color: #5f5749; }
+.page-content p { max-width: 740px; }
+.page-content ul { padding-left: 1.3rem; }
+.page-content li { padding-left: .25rem; margin-bottom: .45rem; }
+.page-photo { width: 100%; height: auto; max-height: 440px; aspect-ratio: 2 / 1; margin: 2rem 0; object-fit: cover; }
+.page-note { padding: 1.25rem 1.5rem; border-left: 3px solid var(--rose); background: rgba(255,250,232,.62); }
+.page-note p:last-child { margin-bottom: 0; }
+.page-quote-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+.page-quote-grid blockquote { margin: 0; padding: 1.4rem; border-top: 2px solid var(--rose); background: rgba(255,250,232,.62); }
+.page-quote-grid p { margin-bottom: .8rem; }
+.page-quote-grid cite { color: var(--rose); font-size: .8rem; font-style: normal; font-weight: 700; }
+.page-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 2rem; }
+.page-actions .button { min-height: 42px; }
+.page-footer { justify-content: center; }
+
 @keyframes rise-in { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes scroll-dot { 0%, 100% { transform: translateY(-4px); opacity: .45; } 50% { transform: translateY(4px); opacity: 1; } }
 
@@ -199,6 +221,9 @@ h1 em { color: #e2b5a0; font-weight: 500; }
   .contact-form-wrap label:not(:first-child) { margin-top: .45rem; }
   .contact-details { padding-top: 0; }
   .site-footer { flex-direction: column; align-items: flex-start; padding: 1.5rem 1.25rem; }
+  .page-intro { padding: 3rem 1.25rem 2.5rem; }
+  .page-content { padding: 2.5rem 1.25rem 3.5rem; }
+  .page-quote-grid { grid-template-columns: 1fr; }
 }
 
 @media (prefers-reduced-motion: reduce) {
